@@ -2,18 +2,18 @@ var x = document.getElementById("demo");
 
 function getLocation() {
   // Code goes here
-
+navigator.geolocation.getCurrentPosition(showPosition);
 }
 
 function showPosition(position) {
   //Code goes here
-  
+  x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
 }
 
 var y = document.getElementById("demo2");
 
 //Code goes here
-
+navigator.geolocation.watchPosition(showPosition);
 
 function showPosition(position) {
     y.innerHTML="Latitude: " + position.coords.latitude + 
