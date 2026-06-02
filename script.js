@@ -14,7 +14,6 @@ var y = document.getElementById("demo2");
 
 //Code goes here
 navigator.geolocation.watchPosition(showPosition);
-
 function showPosition(position) {
     y.innerHTML="Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
@@ -22,7 +21,7 @@ function showPosition(position) {
 }
 
 
-//
+// 
 function createMap(){
     //mapboxgl.accessToken = ""
 
@@ -35,6 +34,6 @@ function createMap(){
     });
 
 
-    map.setCenter([   ]);
+    map.setCenter([   ]); 
 }
 
